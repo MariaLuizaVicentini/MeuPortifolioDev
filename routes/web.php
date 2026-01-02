@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/portifolio', [PortifolioController::class, 'index']);
+Route::get('/', [PortifolioController::class, 'index']);
