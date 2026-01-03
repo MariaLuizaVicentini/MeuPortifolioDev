@@ -1,6 +1,12 @@
 <?php
 
-use App\Http\Controllers\PortifolioController;
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\ProjetosController;
+use App\Http\Controllers\HabilidadesController;
+
+use App\Http\Controllers\SobreMimController;
+use App\Http\Controllers\EntreEmContatoController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,4 +21,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/meuportifoliodev', [PortifolioController::class, 'index']);
+Route::get('/meuportifoliodev', [InicioController::class, 'index']);
+
+Route::get('/meuportifoliodev/projetos', [ProjetosController::class, 'index']);
+
+Route::get('/meuportifoliodev/habilidades', [HabilidadesController::class, 'index']);
+
+Route::get('/meuportifoliodev/sobre', [SobreMimController::class, 'index']);
+
+Route::get('/meuportifoliodev/contato', [EntreEmContatoController::class, 'index']);
