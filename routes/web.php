@@ -21,12 +21,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [InicioController::class, 'index']);
+Route::get('/', [InicioController::class, 'index'])
+->name('pagina-inicial');
 
-Route::get('/meuportifoliodev/projetos', [ProjetosController::class, 'index']);
+Route::get('/meuportifoliodev/projetos', [ProjetosController::class, 'index'])
+->name('meus-projetos');
 
-Route::get('/meuportifoliodev/habilidades', [HabilidadesController::class, 'index']);
+Route::get('/meuportifoliodev/habilidades', [HabilidadesController::class, 'index'])
+->name('minhas-habilidades');
 
-Route::get('/meuportifoliodev/sobre', [SobreMimController::class, 'index']);
+Route::get('/meuportifoliodev/sobre', [SobreMimController::class, 'index'])
+->name('sobre-mim');
 
-Route::get('/meuportifoliodev/contato', [EntreEmContatoController::class, 'index']);
+Route::get('/meuportifoliodev/contato', [EntreEmContatoController::class, 'index'])
+->name('meu-contato');
+
+Route::post('/meuportifoliodev/contato/enviar', [EntreEmContatoController::class, 'enviar'])
+->name('enviar-mensagem');
