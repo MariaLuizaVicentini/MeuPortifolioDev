@@ -6,15 +6,16 @@
             <h2 class="text-center mb-4">Entre em Contato</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form>
+                    <form action="{{ route('enviar-mensagem') }}"  method="POST">
+                        @csrf
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            <input name="nome" type="text" class="form-control" placeholder="Seu Nome" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Seu E-mail" required>
+                            <input name="email" type="email" class="form-control" placeholder="Seu E-mail" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Sua Mensagem"></textarea>
+                            <textarea name="mensagem" class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Enviar</button>
                     </form>
