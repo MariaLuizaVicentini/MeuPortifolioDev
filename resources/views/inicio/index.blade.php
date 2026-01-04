@@ -11,7 +11,7 @@
                     <a href="#projetos" class="btn btn-light btn-lg">Meus projetos</a>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img src="img\discord.jpg" 
+                    <img src="img\malu.jpg" 
                         class="img-fluid rounded-circle w-75" 
                         alt="Foto de Perfil">
                 </div>

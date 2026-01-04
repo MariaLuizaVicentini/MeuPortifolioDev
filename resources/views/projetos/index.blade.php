@@ -11,8 +11,30 @@
                     <img src="{{ asset('img\projetos.jpg') }}" class="card-img-top" alt="Projeto 1">  
                     <div class="card-body">  
                         <h5 class="card-title">CONTROLE DE SÉRIES</h5>  
-                        <p class="card-text">Desenvolvido em laravel com Bootstrap e PHP. </p>  
+                        <p class="card-text">Sistema de Gerenciamento de Séries Aplicação Full-Stack desenvolvida em PHP com Laravel e Bootstrap. A plataforma conta com sistema de autenticação, gestão de catálogo e controle de progresso de episódios assistidos.</p>  
                         <a href="https://github.com/MariaLuizaVicentini/controle-series" class="btn btn-primary">Ver Detalhes</a>  
+                    </div>  
+                </div>  
+            </div>  
+
+            <div class="col-md-6 col-lg-4">  
+                <div class="card h-100">  
+                    <img src="{{ asset('img\projetos.jpg') }}" class="card-img-top" alt="Projeto 1">  
+                    <div class="card-body">  
+                        <h5 class="card-title">BUSCA VAGAS LINKEDIN</h5>  
+                        <p class="card-text">API de Scraping - Integração para busca automatizada de vagas com filtros avançados de relevância e segmentação por período (24h e 7 dias)</p>  
+                        <a href="https://github.com/MariaLuizaVicentini/BuscaVagasLinkedin?tab=readme-ov-file" class="btn btn-primary">Ver Detalhes</a>  
+                    </div>  
+                </div>  
+            </div>
+
+            <div class="col-md-6 col-lg-4">  
+                <div class="card h-100">  
+                    <img src="{{ asset('img\projetos.jpg') }}" class="card-img-top" alt="Projeto 1">  
+                    <div class="card-body">  
+                        <h5 class="card-title">PORTIFOLIO DEV</h5>  
+                        <p class="card-text">Desenvolvido em laravel com Bootstrap e PHP. </p>  
+                        <a href="https://github.com/MariaLuizaVicentini/MeuPortifolioDev" class="btn btn-primary">Ver Detalhes</a>  
                     </div>  
                 </div>  
             </div>  
