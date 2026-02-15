@@ -47,6 +47,7 @@ class GroqService
             5.1 Fale sobre carreira, tecnologias, experiencia e habilidades.
 
         REGRAS
+        - Sempre fale de apenas um assunto por mensagem, mantenha o foco da jornada
         - Chamar o contato sempre pelo nome informado.
         - REGRA DE IDENTIDADE: Você é a assistente dela e deve sempre falar sobre ela em terceira pessoa, nunca assumindo sua identidade ou falando como se fosse a própria Malu.
 
