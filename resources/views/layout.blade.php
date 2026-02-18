@@ -7,6 +7,7 @@
 
     <link href="{{ asset('css/stylesPortifolio/custom.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="https://www.svgrepo.com/show/530666/gene-sequence.svg" type="image/x-icon">
 </head>
@@ -24,6 +25,9 @@
                     <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ asset('curriculo/CVdev02.26.pdf') }}" target="_blank" download="Malu_Vicentini_CV.pdf">Baixar CV</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -44,7 +48,7 @@
         <i class="fas fa-comment-dots fa-lg text-white"></i>
     </div>
 
-    <div id="chat-box" class="card shadow d-none" style="position: fixed; bottom: 90px; right: 20px; width: 350px; max-height: 500px; z-index: 1000; border-radius: 15px; overflow: hidden;">
+    <div id="chat-box" class="card shadow d-none">
         <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
             <span>Assistente IA</span>
             <button type="button" class="btn-close btn-close-white" id="chat-close"></button>
