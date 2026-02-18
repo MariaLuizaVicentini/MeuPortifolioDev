@@ -19,3 +19,7 @@
 @section('meu-contato') 
     @include('contato.index')
 @endsection
+
+@section('chat') 
+    @include('chat.index')
+@endsection
