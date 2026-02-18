@@ -41,7 +41,7 @@
             chatInput.value = '';
 
             const loadingId = 'loading-' + Date.now();
-            appendMsg('Processando...', 'ai', loadingId);
+            appendMsg('Pensando...', 'ai', loadingId);
 
             try {
                 const response = await fetch('/groq/chat-malu', { 

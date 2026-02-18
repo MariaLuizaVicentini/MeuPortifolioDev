@@ -1,128 +1,71 @@
-# 📘 Configuração do Projeto Laravel com SQLite
-
-Este repositório contém um projeto desenvolvido em **Laravel**, configurado para utilizar **SQLite** como banco de dados.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-Principais tecnologias e versões utilizadas no projeto:
-
-* **Laravel:** 8.83.29
-* **PHP:** 7.4.33
-* **Composer:** 2.9.1
-* **Bootstrap:** 5.3.0
-* **Font Awesome:** 6.0.0
+# 🚀 Portfólio Profissional | Malu Vicentini
+Bem-vindo ao repositório do meu portfólio! Este projeto não é apenas uma vitrine dos meus trabalhos, mas também um exemplo prático de aplicação estruturada em Laravel 8 com foco em organização e automação.
 
 ---
 
-## 🗄️ Banco de Dados — SQLite
-
-O projeto utiliza **SQLite** como banco de dados para facilitar a configuração local, evitando a necessidade de instalação e configuração de servidores como MySQL ou PostgreSQL.
-
-> 📌 Cada desenvolvedor deve criar seu próprio arquivo de banco de dados localmente.
+# 👩‍💻 Sobre Mim
+Sou estudante de Gestão de TI na PUC Campinas. Atualmente atuo como QA, garantindo a qualidade de funcionalidades e APIs, e estou em transição para o Desenvolvimento Back-end. Minha meta é construir sistemas que unam performance e código limpo.
 
 ---
+# 🛠️ Stack Tecnológica
+O projeto foi construído utilizando versões específicas para garantir estabilidade e compatibilidade:
+- Framework: Laravel 8.83.29
+- Linguagem: PHP 7.4.33
+- Gerenciador: Composer 2.9.1
+- Banco de Dados: SQLite
+- Front-end: Bootstrap 5.3.0 & Font Awesome 6.0.0
 
-## ⚙️ Configuração do SQLite (Passo a Passo)
+---
+# 📂 Projetos em Destaque
+Como visto na aplicação, os projetos refletem minha evolução:
+- Controle de Séries: Gestão completa (CRUD) desenvolvida em Laravel.
+- Busca Vagas LinkedIn: Automação de scraping para otimização de busca de emprego.
+- Cotação Banco Central: Consumo de API externa para dados financeiros.
+- Automação Web Login: Script em Python + Selenium para testes automatizados.
 
-### 1️⃣ Verifique a existência da pasta `database/`
+---
+# ⚙️ Configuração do Ambiente (Local)
+Siga os passos abaixo para rodar o projeto na sua máquina:
 
-Essa pasta é padrão do Laravel. Caso não exista, crie-a manualmente na raiz do projeto:
+1. Preparando o Banco de Dados (SQLite)
+Certifique-se de que o arquivo database.sqlite existe na pasta /database. No seu arquivo .env, configure o caminho absoluto:
 
-```bash
-database/
 ```
-
----
-
-### 2️⃣ Crie o arquivo do banco SQLite
-
-Dentro da pasta `database/`, crie manualmente um arquivo chamado:
-
-```bash
-database.sqlite
-```
-
----
-
-### 3️⃣ Configure o arquivo `.env`
-
-No arquivo `.env`, ajuste as seguintes variáveis:
-
-```bash
 DB_CONNECTION=sqlite
-DB_DATABASE=C:\projetos-laravel\controle-series\database\database.sqlite
+DB_DATABASE=C:\caminho\completo\para\seu\projeto\database\database.sqlite
 ```
+Atenção: O Laravel exige o caminho completo (absolute path) para o SQLite funcionar corretamente.
 
-🔹 **Importante:**
-O valor de `DB_DATABASE` deve conter o **caminho absoluto completo** até o arquivo `database.sqlite`. Caso contrário, o Laravel poderá apresentar erro de conexão com o banco de dados.
+2. Instalação e Chaves
+No terminal, dentro da pasta do projeto:
+```
+# Instalar dependências do PHP
+composer install
 
----
-
-### 4️⃣ Arquivos ignorados pelo Git
-
-O arquivo `database/database.sqlite` **não é versionado** e está incluído no `.gitignore`.
-
-✔️ Cada máquina deve criar o seu próprio banco localmente.
-
----
-
-## 🔐 Geração da chave da aplicação
-
-Ao clonar o projeto, a chave de criptografia do Laravel (**APP_KEY**) não vem configurada.
-
-### Como gerar a chave:
-
-No terminal, execute:
-
-```bash
+# Gerar a chave única da aplicação
 php artisan key:generate
 ```
-
-Esse comando irá gerar automaticamente uma nova chave e salvá-la no campo `APP_KEY` dentro do arquivo `.env`.
-
----
-
-## 📁 Estrutura recomendada do projeto
-
-```text
-/app
-/bootstrap
-/config
-/database
-    └─ database.sqlite   ← criado manualmente (ignorado pelo Git)
-/public
-/resources
-/routes
-/vendor
-.env
+3. Inicialização
 ```
-
----
-
-## 🧪 Testando a aplicação
-
-Após concluir as etapas acima, execute os comandos abaixo:
-
-```bash
+# Limpar caches de configuração antigos
 php artisan config:clear
+
+# Rodar as migrações do banco de dados
 php artisan migrate
+
+# Iniciar o servidor local
 php artisan serve
 ```
-
-A aplicação estará disponível no endereço exibido no terminal (geralmente `http://127.0.0.1:8000`).
-
----
-
-## ✅ Checklist rápido
-
-Antes de rodar o projeto, confirme:
-
-* ✔️ Arquivo `.env` configurado corretamente
-* ✔️ Arquivo `database.sqlite` criado
-* ✔️ `APP_KEY` gerada
-* ✔️ Cache de configuração limpo
-* ✔️ Migrations executadas
+Acesse em: http://127.0.0.1:8000
 
 ---
+ Checklist de Execução
+
+[✅] Arquivo .env criado (copiado do .env.example).
+
+[✅] Caminho do DB_DATABASE conferido.
+
+[ ] APP_KEY gerada com sucesso.
+
+[ ] PHP 7.4+ instalado e configurado no PATH.
+
