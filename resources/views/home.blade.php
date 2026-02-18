@@ -1,7 +1,11 @@
 @extends('layout')
 
+@section('navbar') 
+    @include('navbar.index')
+@endsection
+
 @section('pagina-inicial') 
-    @include('inicio.index')
+    @include('pagina-inicial.index')
 @endsection
 
 @section('meus-projetos') 
@@ -18,4 +22,12 @@
 
 @section('meu-contato') 
     @include('contato.index')
+@endsection
+
+@section('footer') 
+    @include('footer.index')
+@endsection
+
+@section('chat') 
+    @include('chat.index')
 @endsection
