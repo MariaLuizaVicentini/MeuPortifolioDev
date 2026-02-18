@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('home');
 })->name('pagina-inicial');
 
+Route::any('/version', function () {
+    return '1.0.001';
+});
+
 Route::get('/php-info', function () {
     return view('phpinfo');
 });
